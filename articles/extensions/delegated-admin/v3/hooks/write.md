@@ -12,11 +12,11 @@ useCase: extensibility-extensions
 ---
 # Delegated Administration Hooks: The Write Hook
 
-The Write Hook will run any time a user is create or updated. For example changing the user's password, changing their email address, updating their profile, and so on.
+The Write Hook will run any time a user is create or updated. For example, changing the user's password, changing their email address, updating their profile, and so on.
 
 When using Custom Fields, the user object passed to the callback must be updated to include `user_metadata` and `app_metadata` from the context provided to the hook (`ctx` object). See example below.
 
-Other use cases of the Write Hook could include setting default values for newly created users. For example whenever you're creating new users, and you want the newly-created user to be assigned to the same group, department, or vendor as the ones to which you've been assigned, you can configure this behavior using the **Write Hook**.
+Other use cases of the Write Hook could include setting default values for newly created users. For example, whenever you are creating new users, and you want the newly created user to be assigned to the same group, department, or vendor as the ones to which you have been assigned, you can configure this behavior using the **Write Hook**.
 
 ::: warning
 Auth0 only supports user creation with Database Connections.
